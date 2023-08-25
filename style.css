@@ -1,0 +1,206 @@
+h2:hover {
+    color: yellow;
+}
+
+h2[class=subtitle] {
+    color: blue;
+}
+
+#league table {
+    color: rgb(255, 0, 13);
+}
+
+li:nth-child(1) {
+    color: red;
+}
+
+li:nth-child(2) {
+    color: black;
+}
+
+li:nth-child(3) {
+    color: green;
+}
+
+/* #google-link:link {
+    color: blue;
+}
+
+#google-link:visited {
+    color: red;
+} */
+
+h2 + a {
+    color: red;
+}
+
+textarea ~ button {
+    color: purple;
+}
+
+ul > li {
+    color: blue;
+}
+
+ul li {
+    color: green;
+}
+
+img[src*="/"] {
+    border: 10px solid black;
+}
+
+h2[class~=article-subtitle] {
+    background: green;
+}
+
+body{
+    font-size: xx-large;
+    font-weight: 700;
+    color: #0e0e0e;
+    background-color: green;
+    background-color: aquamarine;
+}
+body{ 
+background: linear-gradient(to bottom rgb(235, 56, 32,) rgb(235, 56, 32)); 
+font-size: 2em;
+text-align: justify;
+font-family:moonspace;
+} 
+
+#title {
+    color: rgb(186, 133, 9);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.subtitle {
+    color: rgb(200, 148, 30);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#service-image { 
+    height: 400px;   /* Ignore this! */
+    width: 70vw;  /* Ignore this! */
+
+    background: radial-gradient(circle, red 20%, blue 40%, yellow 55%);
+    border: 10px double red;   
+}
+   
+  .link {
+    text-decoration: underline;
+   
+  }
+
+.italics{
+    font-style: italic;
+}
+
+#about-us-image {
+   height: 300px;
+   width: 60vw;
+   
+   border: 6px solid blue;
+   margin: 80px 40px;
+}
+
+
+#the-team-image {
+    height: 300px;
+    width: 60vw;
+   
+    border: 6px dashed blue;
+   margin: 80px 40px;
+}
+
+.site-table {
+    display: inline-block;
+}
+
+.container {
+    background-color: rgb(250,250,250);
+    margin: 10px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+.container-item {
+    background: rgb(36, 130, 39);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+
+    width: 70px;
+    line-height: 50px;
+    margin: 10px;
+}
+
+.grid-container {
+    background-color: rgb(250, 250, 250);
+    margin: 10px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+}
+
+.grid-item {
+    color: black;
+    font-size: 25px;
+    text-align: center;
+
+    width: 70px;
+    line-height: 40px;
+    margin: 10px;
+}
+
+.submit-button {
+    margin: 20px 10px;
+    padding: 10px 15px;
+    border: none;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    background: rgb(89, 150, 255);
+    transform: matrix(1, 0.45, 0.45, 1, 100, 50);
+    -webkit-transition:  background, padding  500ms ease;
+    -moz-transition:   background,   padding 500ms ease;
+    -o-transition: background,  padding 500ms ease; 
+   
+}
+
+.submit-button:hover {
+    background: rgb(147, 187, 255);
+    padding: 20px 30px;
+}
+
+#the-team{ 
+    animation-name: red-to-black;
+    animation-duration: 60s;
+    animation-timing-function: linear; 
+ 
+}
+
+@keyframes red-to-black {
+    5% {
+        background: red;
+         transform: translate(5px, 5px);
+        }
+
+    50% {
+        background: green;
+        transform: translate(10px, 10px);
+    }
+
+    100%{
+        background: black;
+        transform: translate(20px, 20px);
+    }
+}
